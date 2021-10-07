@@ -1,6 +1,6 @@
 FROM ruby:3.0.2
-RUN apt update
-RUN apt install -y sqlite3 curl wget vim less git
+
+RUN apt update && apt install -y sqlite3 curl wget vim less git
 
 RUN curl https://cli-assets.heroku.com/install-ubuntu.sh | sh
 RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -
